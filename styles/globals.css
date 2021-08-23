@@ -1,5 +1,11 @@
 :root {
-  --dark: #fff;
+  --primary: blue;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html,
@@ -17,8 +23,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-* {
-  box-sizing: border-box;
 }

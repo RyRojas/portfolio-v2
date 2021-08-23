@@ -1,0 +1,14 @@
+.heroSection {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+}
+
+.heroText {
+  margin-left: 2rem;
+}
