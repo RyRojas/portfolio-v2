@@ -1,0 +1,14 @@
+.about {
+  background-color: var(--primary);
+  padding: 2rem 4rem;
+}
+
+.about h2,
+.about p {
+  color: var(--light-text);
+}
+
+.aboutContainer {
+  max-width: 65ch;
+  margin: 0 auto;
+}
