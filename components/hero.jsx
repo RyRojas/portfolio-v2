@@ -21,7 +21,9 @@ export default function Hero() {
               Portland, OR
             </p>
           </div>
-          <a href="#">See some of my previous work.</a>
+          <a href="#projects" className={styles.button}>
+            See My Work
+          </a>
         </div>
       </div>
     </section>

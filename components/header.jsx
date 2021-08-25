@@ -14,12 +14,12 @@ export default function Header() {
             </a>
           </li>
           <li role="presentation" className={styles.navMenuItem}>
-            <a href="#" role="menuitem">
+            <a href="#about" role="menuitem">
               About
             </a>
           </li>
           <li role="presentation" className={styles.navMenuItem}>
-            <a href="#" role="menuitem">
+            <a href="#projects" role="menuitem">
               Work
             </a>
           </li>
