@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  border: 5px solid var(--primary);
+}
+
+.footerContainer {
+  padding: 0.5rem 0;
+}
+
+.footerHeading {
+  margin: 0.5rem 0 0 0;
+}
+
+.footer a {
+  margin: 0 0.5rem;
+}
