@@ -6,7 +6,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     links: [
       {
-        type: 'Github',
+        type: 'Code',
         url: 'https://github.com/RyRojas/js-pokedex',
       },
       {
@@ -14,6 +14,8 @@ export const projects = [
         url: 'https://ryrojas.github.io/js-pokedex/',
       },
     ],
+    caseStudy: false,
+    img: '/../public/images/projects/pokedex.png',
   },
   {
     name: 'theMovieBook',
@@ -22,13 +24,11 @@ export const projects = [
     tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Bootstrap', 'SCSS'],
     links: [
       {
-        type: 'Github',
-        text: 'Backend',
+        type: 'Backend Code',
         url: 'https://github.com/RyRojas/themoviebook-api',
       },
       {
-        type: 'Github',
-        text: 'Frontend',
+        type: 'Frontend Code',
         url: 'https://github.com/RyRojas/themoviebook-client',
       },
       {
@@ -36,6 +36,8 @@ export const projects = [
         url: 'https://themoviebook.netlify.app/',
       },
     ],
+    caseStudy: false,
+    img: '/../public/images/projects/themoviebook.png',
   },
   {
     name: 'MeetApp',
@@ -44,7 +46,7 @@ export const projects = [
     tech: ['React', 'AWS Lambda', 'Jest', 'Enzyme', 'CSS'],
     links: [
       {
-        type: 'Github',
+        type: 'Code',
         url: 'https://github.com/RyRojas/meetapp',
       },
       {
@@ -52,6 +54,8 @@ export const projects = [
         url: 'https://ryrojas.github.io/meetapp/',
       },
     ],
+    caseStudy: false,
+    img: '/../public/images/projects/meetapp.png',
   },
   {
     name: 'Chatify',
@@ -63,15 +67,13 @@ export const projects = [
       'Async Storage',
       'Gifted Chat',
     ],
+    caseStudy: false,
     links: [
       {
-        type: 'Github',
+        type: 'Code',
         url: 'https://github.com/RyRojas/meetapp',
       },
-      {
-        type: 'Demo',
-        url: 'https://ryrojas.github.io/meetapp/',
-      },
     ],
+    img: '/../public/images/projects/chatify.png',
   },
 ];
