@@ -1,23 +1,5 @@
 export const projects = [
   {
-    name: 'PokéDex',
-    description:
-      'A simple PokéDex app to get familiarized with JavaScript and Bootstrap, as well as working with an API.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    links: [
-      {
-        type: 'Code',
-        url: 'https://github.com/RyRojas/js-pokedex',
-      },
-      {
-        type: 'Demo',
-        url: 'https://ryrojas.github.io/js-pokedex/',
-      },
-    ],
-    caseStudy: false,
-    img: '/../public/images/projects/pokedex.png',
-  },
-  {
     name: 'theMovieBook',
     description:
       'Movie database single-page application. Database and RESTful API built from scratch with the client being built twice using both React and Angular.',
@@ -31,6 +13,11 @@ export const projects = [
         type: 'Frontend Code',
         url: 'https://github.com/RyRojas/themoviebook-client',
       },
+      {
+        type: 'Case Study',
+        url: '/case-study',
+      },
+
       {
         type: 'Demo',
         url: 'https://themoviebook.netlify.app/',
@@ -75,5 +62,23 @@ export const projects = [
       },
     ],
     img: '/../public/images/projects/chatify.png',
+  },
+  {
+    name: 'PokéDex',
+    description:
+      'A simple PokéDex app to get familiarized with JavaScript and Bootstrap, as well as working with an API.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    links: [
+      {
+        type: 'Code',
+        url: 'https://github.com/RyRojas/js-pokedex',
+      },
+      {
+        type: 'Demo',
+        url: 'https://ryrojas.github.io/js-pokedex/',
+      },
+    ],
+    caseStudy: false,
+    img: '/../public/images/projects/pokedex.png',
   },
 ];

@@ -20,25 +20,64 @@
   align-self: center;
   margin: 0 3rem;
   border: 4px solid var(--primary);
-  padding: 2rem 2rem 2rem 12rem;
+  padding: 2rem 2rem 2rem 13rem;
   grid-column: 4/12;
   grid-row: 1/-1;
 }
 
-.projectDetails {
-  max-width: 45ch;
+.project:nth-child(even) > .projectImage {
+  grid-column: 6/12;
 }
 
-.projectDetails > ul {
-  padding: 0;
+.project:nth-child(even) > .projectDetailsContainer {
+  grid-column: 1/8;
+  padding: 2rem 11rem 2rem 2rem;
+}
+
+.projectDetails {
+  max-width: 65ch;
+}
+
+.projectDetails a {
+  margin: 0;
+}
+
+.projectDetails ul {
   display: flex;
   flex-wrap: wrap;
+  white-space: nowrap;
+  padding: 0;
 }
 
 .projectDetails li {
-  margin: 0.25rem 0.75rem;
+  margin: 0.25rem 1rem 0.25rem 0rem;
 }
 
-.projectDetails li:first-child {
-  margin-left: 0;
+.projectTech li {
+  padding: 0.25rem 1rem;
+  background-color: var(--primary);
+  color: var(--light-text);
+  border-radius: 0.25rem;
+}
+
+@media all and (max-width: 72.5rem) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectDetailsContainer {
+    padding: 0.25rem 1rem;
+  }
+
+  .project:nth-child(even) > .projectDetailsContainer {
+    padding: 0.25rem 1rem;
+  }
+}
+
+@media all and (max-width: 50rem) {
+  .projectDetailsContainer {
+    margin: 0;
+  }
 }
