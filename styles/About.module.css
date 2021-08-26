@@ -3,12 +3,36 @@
   padding: 2rem 4rem;
 }
 
-.about h2,
-.about p {
+.about {
   color: var(--light-text);
 }
 
-.aboutContainer {
+.aboutContainer,
+.skillsContainer {
   max-width: 65ch;
   margin: 0 auto;
+}
+
+.skillsContainer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.skillsContainer li {
+  padding: 0.25rem 1rem;
+  margin: 0.5rem 0.75rem 0.5rem 0;
+  background-color: var(--bg-secondary);
+  border-radius: 0.25rem;
+}
+
+@media all and (max-width: 36rem) {
+  .about {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+
+  .skillsContainer ul {
+    justify-content: center;
+  }
 }
