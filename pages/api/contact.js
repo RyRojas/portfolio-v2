@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import nodemailer from 'nodemailer';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
     port: 465,
     host: 'smtp.gmail.com',
@@ -27,8 +27,10 @@ export default function handler(req, res) {
       </div>`,
   };
 
-  transporter.sendMail(mailData, (err, info) => {
-    err ? console.error(err) : console.log(info);
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err, info) =>
+      err ? reject(err) : resolve(info)
+    );
   });
 
   res.status(200).send('Success');
