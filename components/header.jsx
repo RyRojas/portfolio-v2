@@ -24,7 +24,7 @@ export default function Header() {
             </a>
           </li>
           <li role="presentation" className={styles.navMenuItem}>
-            <a href="#" role="menuitem">
+            <a href="#contact" role="menuitem">
               Contact
             </a>
           </li>

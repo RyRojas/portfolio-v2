@@ -12,3 +12,15 @@
 .heroText {
   margin-left: 2rem;
 }
+
+@media all and (max-width: 44rem) {
+  .heroContainer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .heroText {
+    margin: 0;
+  }
+}
