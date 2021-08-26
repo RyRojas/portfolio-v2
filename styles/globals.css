@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Roboto+Slab:wght@400&family=Rubik:wght@700&display=swap');
+
 :root {
-  --bg-color: #fefefa;
+  --bg-main: #fefefa;
+  --bg-secondary: #1a417b;
   --primary: #122d55;
   --light-text: #e7ecef;
+  --font-heading: 'Alegreya Sans SC', sans-serif;
+  --font-subheading: 'Rubik', sans-serif;
+  --font-regular: 'Roboto Slab', serif;
 }
 
 *,
@@ -14,19 +20,36 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--bg-color);
+  background-color: var(--bg-main);
+  font-family: var(--font-regular);
+  color: var(--primary);
+  scroll-behavior: smooth;
 }
 
-h1,
+h1 {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  margin: 0.25rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  color: var(--primary);
+h6 {
+  font-family: var(--font-subheading);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
 }
 
 a {
@@ -36,4 +59,32 @@ a {
 
 ul {
   list-style: none;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+  padding: 0.75rem 1rem;
+  transition: all ease 0.2s;
+  background-color: var(--bg-main);
+}
+
+.button:hover {
+  background-color: var(--primary);
+  color: var(--light-text);
+}
+
+.button div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button svg {
+  margin-right: 0.275rem;
+}
+
+.smallButton {
+  padding: 0.5rem 0.75rem;
 }
