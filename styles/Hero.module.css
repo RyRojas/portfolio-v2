@@ -13,6 +13,10 @@
   margin-left: 2rem;
 }
 
+.heroText p {
+  margin-bottom: 1.5rem;
+}
+
 @media all and (max-width: 44rem) {
   .heroContainer {
     flex-direction: column;

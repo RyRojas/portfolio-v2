@@ -10,7 +10,7 @@
 .aboutContainer,
 .skillsContainer {
   max-width: 65ch;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .skillsContainer ul {
@@ -26,7 +26,7 @@
   border-radius: 0.25rem;
 }
 
-@media all and (max-width: 36rem) {
+@media all and (max-width: 44rem) {
   .about {
     padding: 2rem 2rem;
     text-align: center;
