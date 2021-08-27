@@ -18,6 +18,10 @@
 }
 
 @media all and (max-width: 44rem) {
+  .heroSection {
+    min-height: 100vh;
+  }
+
   .heroContainer {
     flex-direction: column;
     justify-content: center;
