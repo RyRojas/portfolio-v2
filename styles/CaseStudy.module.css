@@ -1,0 +1,63 @@
+.caseStudyContainer {
+  margin: 1rem 15%;
+  position: relative;
+}
+
+.caseStudyContainer > a {
+  position: absolute;
+  top: -1.25rem;
+}
+
+.section {
+  margin: 3rem 0;
+}
+
+.sectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer {
+  max-width: 65ch;
+  margin-right: 2rem;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 65ch;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.rowReverse .textContainer {
+  margin-right: 0;
+}
+
+.rowReverse .imageContainer {
+  margin-right: 2rem;
+}
+
+@media all and (max-width: 78rem) {
+  .section {
+    margin: 2rem 0;
+  }
+  .sectionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionContainer > div:first-child {
+    margin-right: 0rem;
+  }
+
+  .imageContainer {
+    margin-top: 2rem;
+  }
+
+  .imageContainer {
+    max-width: fit-content;
+  }
+}
