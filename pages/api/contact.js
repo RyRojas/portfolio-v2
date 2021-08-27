@@ -12,6 +12,7 @@ export default async function handler(req, res) {
     secure: true,
   });
 
+  //Set
   const mailData = {
     from: process.env.SENDER_ADDRESS,
     to: process.env.RECIPIENT_ADDRESS,

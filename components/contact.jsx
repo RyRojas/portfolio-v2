@@ -2,8 +2,16 @@ import { useState } from 'react';
 import styles from '../styles/Contact.module.css';
 
 export default function Contact() {
-  const [isLoading, setIsLoading] = useState(false),
+  const [name, setName] = useState(''),
+    [email, setEmail] = useState(''),
+    [message, setMessage] = useState(''),
     [response, setResponse] = useState('');
+
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,11 +23,6 @@ export default function Contact() {
       message: e.currentTarget[2].value,
     };
 
-    //Intialize spinner
-    setIsLoading(true);
-
-    e.currentTarget.reset();
-
     fetch('/api/contact', {
       method: 'POST',
       headers: {
@@ -29,15 +32,12 @@ export default function Contact() {
       body: JSON.stringify(data),
     })
       .then((res) => {
-        setIsLoading(false);
-        console.log('Response Received');
         if (res.status === 200) {
           setResponse('Thank you for your message');
+          resetForm();
         }
       })
-      .catch(setResponse('Something went wrong'));
-
-    e.currentTarget.reset();
+      .catch((res) => setResponse('Something went wrong. Please try again.'));
   };
 
   return (
@@ -49,30 +49,33 @@ export default function Contact() {
         onSubmit={handleSubmit}
         className={styles.contactForm}
       >
-        <h2 className={styles.fullWidth}>Get in Touch</h2>
+        <h2 className={styles.fullWidth}>Get in Touch </h2>
+
         <div>
           <label htmlFor="contact-name">
-            Name <span>(Required)</span>
+            Name<span>*</span>
           </label>
           <br />
           <input
             type="text"
             id="contact-name"
             name="contact-name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             placeholder="Your name"
             required
           />
         </div>
 
         <div>
-          <label htmlFor="contact-email">
-            Email <span>(Required)</span>
-          </label>
+          <label htmlFor="contact-email">Email</label>
           <br />
           <input
             type="email"
             id="contact-email"
             name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
             required
           />
@@ -84,14 +87,17 @@ export default function Contact() {
           <textarea
             id="contact-message"
             name="contact-message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             placeholder="Enter your message"
             required
           ></textarea>
         </div>
 
-        <button type="submit" className={styles.fullWidth}>
+        <button type="submit" className={'inverse-button'}>
           Submit
         </button>
+        {response && <p className={styles.formResponse}>{response}</p>}
       </form>
     </section>
   );

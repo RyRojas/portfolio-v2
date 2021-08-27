@@ -7,10 +7,11 @@
 .contactForm {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
   max-width: 750px;
   padding: 0 3rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .fullWidth {
@@ -36,4 +37,19 @@
 
 .contactForm textarea {
   min-height: 10rem;
+}
+
+.formResponse {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media all and (max-width: 44rem) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+  }
 }
