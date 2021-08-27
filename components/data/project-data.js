@@ -61,7 +61,7 @@ export const projects = [
     links: [
       {
         type: 'Code',
-        url: 'https://github.com/RyRojas/meetapp',
+        url: 'https://github.com/RyRojas/chatify',
       },
     ],
     img: '/images/projects/chatify.png',
