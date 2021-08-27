@@ -4,6 +4,7 @@
   --bg-main: #fefefa;
   --bg-secondary: #1a417b;
   --primary: #122d55;
+  --accent-text: #cc5a57;
   --light-text: #e7ecef;
   --font-heading: 'Alegreya Sans SC', sans-serif;
   --font-subheading: 'Rubik', sans-serif;
@@ -73,6 +74,19 @@ ul {
 .button:hover {
   background-color: var(--primary);
   color: var(--light-text);
+}
+
+.inverse-button {
+  background-color: var(--primary);
+  color: var(--light-text);
+  border: 1px solid var(--light-text);
+  transition: all ease 0.2s;
+  grid-column: 1/3;
+}
+
+.inverse-button:hover {
+  background-color: var(--bg-main);
+  color: var(--primary);
 }
 
 .button div {
