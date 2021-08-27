@@ -1,5 +1,5 @@
 .projectList {
-  margin: 3rem;
+  margin: 4rem 2rem;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
@@ -60,7 +60,7 @@
   border-radius: 0.25rem;
 }
 
-@media all and (max-width: 72.5rem) {
+@media all and (max-width: 76.5rem) {
   .project {
     display: flex;
     flex-direction: column;
@@ -69,15 +69,10 @@
 
   .projectDetailsContainer {
     padding: 0.25rem 1rem;
+    margin: 0;
   }
 
   .project:nth-child(even) > .projectDetailsContainer {
     padding: 0.25rem 1rem;
-  }
-}
-
-@media all and (max-width: 50rem) {
-  .projectDetailsContainer {
-    margin: 0;
   }
 }
