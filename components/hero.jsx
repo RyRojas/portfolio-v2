@@ -14,12 +14,9 @@ export default function Hero() {
           priority={true}
         />
         <div className={styles.heroText}>
-          <h1>Hello</h1>
+          <h1>Hello, I{`'`}m Ryan</h1>
           <div>
-            <p>
-              I{`'`}m Ryan, a student <span>web</span> developer based in
-              Portland, OR
-            </p>
+            <p>A full stack developer based in Portland, OR</p>
           </div>
           <a href="#projects" className="button">
             See My Work
