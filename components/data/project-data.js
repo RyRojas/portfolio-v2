@@ -6,15 +6,18 @@ export const projects = [
     tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Bootstrap', 'SCSS'],
     links: [
       {
-        type: 'Backend Code',
+        type: 'Code',
+        name: 'Backend Code',
         url: 'https://github.com/RyRojas/themoviebook-api',
       },
       {
-        type: 'Frontend Code',
+        type: 'Code',
+        name: 'Frontend Code',
         url: 'https://github.com/RyRojas/themoviebook-client',
       },
       {
-        type: 'Case Study',
+        type: 'Misc',
+        name: 'Case Study',
         url: '/case-study',
       },
 
@@ -24,7 +27,7 @@ export const projects = [
       },
     ],
     caseStudy: false,
-    img: '/../public/images/projects/themoviebook.png',
+    img: '/images/projects/themoviebook.png',
   },
   {
     name: 'MeetApp',
@@ -42,7 +45,7 @@ export const projects = [
       },
     ],
     caseStudy: false,
-    img: '/../public/images/projects/meetapp.png',
+    img: '/images/projects/meetapp.png',
   },
   {
     name: 'Chatify',
@@ -61,7 +64,7 @@ export const projects = [
         url: 'https://github.com/RyRojas/meetapp',
       },
     ],
-    img: '/../public/images/projects/chatify.png',
+    img: '/images/projects/chatify.png',
   },
   {
     name: 'PokéDex',
@@ -79,6 +82,6 @@ export const projects = [
       },
     ],
     caseStudy: false,
-    img: '/../public/images/projects/pokedex.png',
+    img: '/images/projects/pokedex.png',
   },
 ];

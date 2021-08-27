@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt, FaReadme } from 'react-icons/fa';
 
-export default function LinkButton({ link: { type, url } }) {
+export default function LinkButton({ link: { type, name, url } }) {
   switch (type) {
     case 'Demo':
       return (
@@ -17,18 +17,7 @@ export default function LinkButton({ link: { type, url } }) {
         </a>
       );
 
-    case 'Case Study':
-      return (
-        <Link href={url} passHref>
-          <a className="button smallButton">
-            <div>
-              <FaReadme /> {type}
-            </div>
-          </a>
-        </Link>
-      );
-
-    default:
+    case 'Code':
       return (
         <a
           href={url}
@@ -37,9 +26,20 @@ export default function LinkButton({ link: { type, url } }) {
           className="button smallButton"
         >
           <div>
-            <FaGithub /> {type}
+            <FaGithub /> {name || type}
           </div>
         </a>
+      );
+
+    default:
+      return (
+        <Link href={url} passHref>
+          <a className="button smallButton">
+            <div>
+              <FaReadme /> {name}
+            </div>
+          </a>
+        </Link>
       );
   }
 }
