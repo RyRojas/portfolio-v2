@@ -15,6 +15,12 @@
   flex-direction: row;
 }
 
-.navMenuItem {
+.navMenu a {
   margin: 0 1rem;
+  font-size: 1.25rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.navMenu a:hover {
+  color: var(--accent-text);
 }
