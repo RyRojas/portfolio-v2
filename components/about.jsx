@@ -1,4 +1,5 @@
 import styles from '../styles/About.module.css';
+import LinkButton from './link-button';
 
 export default function About() {
   const SKILLS = [
@@ -34,6 +35,7 @@ export default function About() {
           In my free time, I enjoy riding public transit, trying new food, and
           travelling to partake in the prior two.
         </p>
+        <LinkButton link={{ type: 'Resume' }} />
       </div>
 
       <div className={styles.skillsContainer}>

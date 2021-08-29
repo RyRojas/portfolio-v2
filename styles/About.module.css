@@ -1,16 +1,17 @@
 .about {
   background-color: var(--primary);
-  padding: 2rem 4rem;
-}
-
-.about {
   color: var(--light-text);
+  padding: 2rem 4rem;
 }
 
 .aboutContainer,
 .skillsContainer {
   max-width: 65ch;
   margin: 2rem auto;
+}
+
+.aboutContainer p:last-of-type {
+  margin-bottom: 2rem;
 }
 
 .skillsContainer ul {

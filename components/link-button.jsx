@@ -1,5 +1,10 @@
 import Link from 'next/link';
-import { FaGithub, FaExternalLinkAlt, FaReadme } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaReadme,
+  FaRegFileAlt,
+} from 'react-icons/fa';
 
 export default function LinkButton({ link: { type, name, url } }) {
   switch (type) {
@@ -27,6 +32,20 @@ export default function LinkButton({ link: { type, name, url } }) {
         >
           <div>
             <FaGithub /> {name || type}
+          </div>
+        </a>
+      );
+
+    case 'Resume':
+      return (
+        <a
+          href="/Rojas_Ryan_Resume.pdf"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="button inverse-button"
+        >
+          <div>
+            <FaRegFileAlt /> {type}
           </div>
         </a>
       );

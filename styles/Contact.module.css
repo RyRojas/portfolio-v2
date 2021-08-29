@@ -37,6 +37,7 @@
 
 .contactForm textarea {
   min-height: 10rem;
+  resize: vertical;
 }
 
 .formResponse {
