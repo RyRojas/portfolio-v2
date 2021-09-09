@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import headshot from '../public/images/headshot.png';
+import headshot from '../public/images/headshot.jpg';
 import styles from '../styles/Hero.module.css';
 
 export default function Hero() {
