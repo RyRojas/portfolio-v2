@@ -18,7 +18,8 @@
   transition: all ease-in-out 0.2s;
 }
 
-.navMenu a:hover {
+.navMenu a:hover,
+.navMenu a:focus {
   color: var(--accent-text);
 }
 

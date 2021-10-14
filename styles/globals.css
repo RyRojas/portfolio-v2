@@ -72,7 +72,8 @@ ul {
   background-color: var(--bg-main);
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--primary);
   color: var(--light-text);
 }
@@ -85,7 +86,8 @@ ul {
   grid-column: 1/3;
 }
 
-.inverse-button:hover {
+.inverse-button:hover,
+.inverse-button:focus {
   background-color: var(--bg-main);
   color: var(--primary);
 }
