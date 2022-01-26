@@ -85,7 +85,7 @@ export default function CaseStudy() {
                   link={{
                     type: 'Misc',
                     name: 'Documentation',
-                    url: 'https://ryrojas.github.io/themoviebook-api/docs/',
+                    url: 'https://ryrojas.github.io/themoviebook-api/',
                   }}
                 />
               </div>
