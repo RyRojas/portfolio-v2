@@ -21,7 +21,7 @@ export default function Footer() {
             <FaDev size={25} title="Dev.to" />
           </a>
           <a
-            href="https://www.linkedin.com/in/ryanrojas/"
+            href="https://www.linkedin.com/in/ryrojas/"
             target="_blank"
             rel="noreferrer noopener"
           >
